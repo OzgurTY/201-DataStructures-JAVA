@@ -18,8 +18,9 @@ public class LinkedList {
     public void insertLast(Node newNode){
         if(head == null){
             head = newNode;
+        } else {
+            tail.setNext(newNode);
         }
-        tail.setNext(newNode);
         tail = newNode;
     }
 
@@ -66,5 +67,47 @@ public class LinkedList {
             tmp = tmp.getNext();
         }
         return count;
+    }
+
+    public void deleteFirst(){
+        head = head.getNext();
+        if (head == null) {
+            tail = null;
+        }
+    }
+
+    public Node getPrevious(Node node){
+        Node tmp = head;
+        Node previous = null;
+        while (tmp != tail) {
+            previous = tmp;
+            tmp = tmp.getNext();
+        }
+        return previous;
+    }
+
+    public void deleteLast(){
+        tail = getPrevious(tail);
+        if (tail != null) {
+            tail.setNext(null);
+        } else {
+            head = null;
+        }
+    }
+
+    public void deleteMiddle(Node node){
+        Node previous;
+        previous = getPrevious(node);
+        previous.setNext(node.getNext());
+    }
+
+    public String toString(){
+        StringBuilder result = new StringBuilder();
+        Node tmp = head;
+        while (tmp != null) {
+            result.append(tmp).append(" ");
+            tmp = tmp.getNext();
+        }
+        return result.toString();
     }
 }
