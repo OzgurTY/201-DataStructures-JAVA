@@ -1,6 +1,6 @@
 public class LinkedList {
-    private Node head;
-    private Node tail;
+    protected Node head;
+    protected Node tail;
 
     public LinkedList(){
         head = null;
@@ -99,6 +99,79 @@ public class LinkedList {
         Node previous;
         previous = getPrevious(node);
         previous.setNext(node.getNext());
+    }
+
+    public void deleteSecond(){
+        Node tmp;
+        if(head.getNext() == null){
+            deleteFirst();
+        }else{
+            if(head.getNext() == tail){
+                deleteLast();
+            }else{
+                tmp = head.getNext().getNext();
+                head.setNext(tmp);
+            }
+        }
+    }
+
+    public void addToSortedList(int x){
+        Node new_node = new Node(x);
+        Node current;
+        Node tmp = null;
+        if(head == null || head.getData() >= new_node.getData()){
+            insertFirst(new_node);
+        }else{
+            current = head;
+            while(current.getNext() != null && current.getNext().getData() < x){
+                current = current.getNext();
+                }
+            insertMiddle(new_node, current);
+            }
+        }
+
+
+    public void deleteKth(int k){
+        Node tmp = head;
+        Node previous = null;
+        int i = 0;
+        while(i < k){
+            previous = tmp;
+            tmp = tmp.getNext();
+            i++;
+        }
+        if(previous == null){
+            head = head.getNext();
+            if(head == null){
+                tail = null;
+            }
+        }else{
+            previous.setNext(tmp.getNext());
+            if(previous.getNext() == null){
+                tail = previous;
+            }
+        }
+    }
+
+    public void moveNode(Node x, int n){
+        Node prev1 = null, prev2, tmp = head;
+        while(tmp != x){
+            prev1 = tmp;
+            tmp = tmp.getNext();
+        }
+        prev2 = x;
+        int i = 0;
+        while(i != n){
+            prev2 = prev2.getNext();
+            i++;
+        }
+        if(prev1 != null){
+            prev1.setNext(x.getNext());
+        }else{
+            head = head.getNext();
+        }
+        x.setNext(prev2.getNext());
+        prev2.setNext(x);
     }
 
     public String toString(){
