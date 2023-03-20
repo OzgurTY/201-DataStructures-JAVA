@@ -1,3 +1,5 @@
+package List;
+
 public class LinkedList {
     protected Node head;
     protected Node tail;
@@ -5,6 +7,14 @@ public class LinkedList {
     public LinkedList(){
         head = null;
         tail = null;
+    }
+
+    public boolean isEmpty(){
+        return head == null;
+    }
+
+    public Node getHead(){
+        return head;
     }
 
     public void insertFirst(Node newNode){

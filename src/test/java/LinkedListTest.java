@@ -1,3 +1,7 @@
+import List.DoublyLinkedList;
+import List.DoublyNode;
+import List.LinkedList;
+import List.Node;
 import org.junit.Test;
 
 public class LinkedListTest {
@@ -78,6 +82,15 @@ public class LinkedListTest {
         list.moveNode(node1, 2);
         System.out.println(list.toString());
         list.moveNode(node2, 1);
+        System.out.println(list.toString());
+    }
+
+    @Test
+    public void TestInsertFirstForDouble(){
+        DoublyLinkedList list = new DoublyLinkedList();
+        list.insertFirst(new DoublyNode(4));
+        list.insertFirst(new DoublyNode(5));
+        list.insertFirst(new DoublyNode(6));
         System.out.println(list.toString());
     }
 }

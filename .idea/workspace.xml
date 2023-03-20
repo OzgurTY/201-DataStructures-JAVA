@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21e6bdd-ec3a-440c-931b-adf65d1d526b" name="Changes" comment="Added some extra functions. Added Test Files and new DoublyNode classes.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DoublyLinkedList.java" afterDir="false" />
+    <list default="true" id="c21e6bdd-ec3a-440c-931b-adf65d1d526b" name="Changes" comment="Added some extra functions. Added  new Test Files and new DoublyNode functions. Added new LinkedList features.">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Array/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Array/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/List/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/List/DoublyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DoublyNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/List/DoublyNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/List/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/List/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,13 +68,18 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/KODLAMA/JetBrains/CODES/JAVA/DataStructures&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -79,22 +91,32 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest.TestAddToSortedList">
-    <configuration name="LinkedListTest.Test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructures" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedListTest" />
-      <option name="METHOD_NAME" value="Test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LinkedListTest.TestInsertFirstForDouble">
     <configuration name="LinkedListTest.TestAddToSortedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkedListTest" />
       <option name="METHOD_NAME" value="TestAddToSortedList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListTest.TestDeleteSecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructures" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedListTest" />
+      <option name="METHOD_NAME" value="TestDeleteSecond" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListTest.TestInsertFirstForDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructures" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedListTest" />
+      <option name="METHOD_NAME" value="TestInsertFirstForDouble" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,23 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.addToSortedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructures" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedListTest" />
-      <option name="METHOD_NAME" value="addToSortedList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LinkedListTest.TestInsertFirstForDouble" />
+        <item itemvalue="JUnit.LinkedListTest.TestDeleteSecond" />
         <item itemvalue="JUnit.LinkedListTest.TestAddToSortedList" />
         <item itemvalue="JUnit.LinkedListTest.TestMoveNode" />
         <item itemvalue="JUnit.LinkedListTest.TestdeleteKth" />
-        <item itemvalue="JUnit.LinkedListTest.addToSortedList" />
-        <item itemvalue="JUnit.LinkedListTest.Test3" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +165,11 @@
       <workItem from="1678686893740" duration="5607000" />
       <workItem from="1678777161523" duration="187000" />
       <workItem from="1678777364810" duration="99000" />
-      <workItem from="1678805493488" duration="6059000" />
+      <workItem from="1678805493488" duration="6216000" />
+      <workItem from="1679151958637" duration="18000" />
+      <workItem from="1679153241570" duration="1650000" />
+      <workItem from="1679292494732" duration="2082000" />
+      <workItem from="1679294649399" duration="2503000" />
     </task>
     <task id="LOCAL-00001" summary="Added LinkedList and Node classes.">
       <created>1678087949472</created>
@@ -190,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678777453569</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added some extra functions. Added  new Test Files and new DoublyNode functions. Added new LinkedList features.">
+      <created>1678811707674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678811707674</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +234,7 @@
     <MESSAGE value="Added LinkedList and Node classes." />
     <MESSAGE value="Added some functions." />
     <MESSAGE value="Added some extra functions. Added Test Files and new DoublyNode classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some extra functions. Added Test Files and new DoublyNode classes." />
+    <MESSAGE value="Added some extra functions. Added  new Test Files and new DoublyNode functions. Added new LinkedList features." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some extra functions. Added  new Test Files and new DoublyNode functions. Added new LinkedList features." />
   </component>
 </project>
