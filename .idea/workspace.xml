@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21e6bdd-ec3a-440c-931b-adf65d1d526b" name="Changes" comment="Added some extra functions. Added  new Test Files and new DoublyNode functions. Added new LinkedList features.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Array/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Array/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/List/Stack.java" afterDir="false" />
+    <list default="true" id="c21e6bdd-ec3a-440c-931b-adf65d1d526b" name="Changes" comment="Added Element and Stack classes.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/Evaluate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/TokenType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/List/DoublyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DoublyNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/List/DoublyNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/List/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/List/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Array/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Array/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -90,8 +87,24 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Array.MathematicalExpression" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest.TestInsertFirstForDouble">
+  <component name="RunManager" selected="Application.Evaluate">
+    <configuration name="Evaluate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.MathematicalExpression.Evaluate" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Array.MathematicalExpression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListTest.TestAddToSortedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DataStructures" />
       <option name="PACKAGE_NAME" value="" />
@@ -132,23 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.TestdeleteKth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructures" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedListTest" />
-      <option name="METHOD_NAME" value="TestdeleteKth" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Evaluate" />
         <item itemvalue="JUnit.LinkedListTest.TestInsertFirstForDouble" />
         <item itemvalue="JUnit.LinkedListTest.TestDeleteSecond" />
         <item itemvalue="JUnit.LinkedListTest.TestAddToSortedList" />
         <item itemvalue="JUnit.LinkedListTest.TestMoveNode" />
-        <item itemvalue="JUnit.LinkedListTest.TestdeleteKth" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +172,12 @@
       <workItem from="1679151958637" duration="18000" />
       <workItem from="1679153241570" duration="1650000" />
       <workItem from="1679292494732" duration="2082000" />
-      <workItem from="1679294649399" duration="2503000" />
+      <workItem from="1679294649399" duration="2694000" />
+      <workItem from="1679374651436" duration="671000" />
+      <workItem from="1679399209851" duration="5279000" />
+      <workItem from="1679477667665" duration="10000" />
+      <workItem from="1679496944398" duration="387000" />
+      <workItem from="1679498151721" duration="961000" />
     </task>
     <task id="LOCAL-00001" summary="Added LinkedList and Node classes.">
       <created>1678087949472</created>
@@ -213,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678811707674</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Element and Stack classes.">
+      <created>1679297680254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679297680254</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +250,7 @@
     <MESSAGE value="Added some functions." />
     <MESSAGE value="Added some extra functions. Added Test Files and new DoublyNode classes." />
     <MESSAGE value="Added some extra functions. Added  new Test Files and new DoublyNode functions. Added new LinkedList features." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some extra functions. Added  new Test Files and new DoublyNode functions. Added new LinkedList features." />
+    <MESSAGE value="Added Element and Stack classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Element and Stack classes." />
   </component>
 </project>

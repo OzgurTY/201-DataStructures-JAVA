@@ -1,4 +1,4 @@
-package Array;
+package Array.MathematicalExpression;
 
 public class Stack {
     private Element[] array;
@@ -24,20 +24,17 @@ public class Stack {
     }
 
     void push(Element element){
-        if(!isFull()){
+        if (!isFull()){
             top++;
             array[top] = element;
         }
     }
 
     Element pop(){
-        if(!isEmpty()){
+        if (!isEmpty()){
             top--;
             return array[top + 1];
         }
         return null;
     }
 }
-
-
-
