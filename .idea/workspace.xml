@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21e6bdd-ec3a-440c-931b-adf65d1d526b" name="Changes" comment="Added Element and Stack classes.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/Evaluate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Array/MathematicalExpression/TokenType.java" afterDir="false" />
+    <list default="true" id="c21e6bdd-ec3a-440c-931b-adf65d1d526b" name="Changes" comment="Buh fixes.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Array/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/List/Polynomials/Polynomial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/List/Polynomials/Term.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/List/Polynomials/TermNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/List/Polynomials/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/List/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Array/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Array/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,13 +91,26 @@
       <recent name="Array.MathematicalExpression" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Evaluate">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Evaluate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Array.MathematicalExpression.Evaluate" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Array.MathematicalExpression.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="List.Polynomial.Test" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="List.Polynomial.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,23 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.TestMoveNode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DataStructures" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkedListTest" />
-      <option name="METHOD_NAME" value="TestMoveNode" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Evaluate" />
         <item itemvalue="JUnit.LinkedListTest.TestInsertFirstForDouble" />
         <item itemvalue="JUnit.LinkedListTest.TestDeleteSecond" />
         <item itemvalue="JUnit.LinkedListTest.TestAddToSortedList" />
-        <item itemvalue="JUnit.LinkedListTest.TestMoveNode" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +180,8 @@
       <workItem from="1679399209851" duration="5279000" />
       <workItem from="1679477667665" duration="10000" />
       <workItem from="1679496944398" duration="387000" />
-      <workItem from="1679498151721" duration="961000" />
+      <workItem from="1679498151721" duration="985000" />
+      <workItem from="1679896005694" duration="3276000" />
     </task>
     <task id="LOCAL-00001" summary="Added LinkedList and Node classes.">
       <created>1678087949472</created>
@@ -228,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679297680254</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Buh fixes.">
+      <created>1679502492348</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679502492348</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +262,7 @@
     <MESSAGE value="Added some extra functions. Added Test Files and new DoublyNode classes." />
     <MESSAGE value="Added some extra functions. Added  new Test Files and new DoublyNode functions. Added new LinkedList features." />
     <MESSAGE value="Added Element and Stack classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Element and Stack classes." />
+    <MESSAGE value="Buh fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Buh fixes." />
   </component>
 </project>
